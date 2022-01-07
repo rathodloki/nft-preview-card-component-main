@@ -14,4 +14,5 @@ To create a card using HTML & CSS
 - Hover States
   ![img](image/README-template/1641551888290.png)
 - Mobile View
+
   ![img](image/README-template/1641551951300.png)
