@@ -5,29 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    body{
+      background-color: hsl(217, 54%, 11%);
+      font-size: 18px;
+      color: hsl(0, 0%, 100%);
+      font-family: Outfit;
+    }
+    .attribution { font-size: 11px; text-align: center; position: fixed;
+      top: 95%;
+      left: 50%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+      margin-top: 20px}
     .attribution a { color: hsl(228, 45%, 44%); }
+    .card{
+      width: 270px;
+      height: 500px;
+      border-radius: 12px;
+      top: 50%;
+      font-size: medium;
+      font-weight: 300;
+      background-color: hsl(216, 50%, 16%);
+      padding: 20px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+    }
+    .product-image{
+      width: 100%;
+      border-radius: 12px;
+    }
+    .product-name{
+      font-weight: 900;
+    }
+    .foot .product-attribute{
+      display: inline;
+    }
+    .foot{
+      margin-top: 10px;
+    }
+    .ava{
+      width: 50px;
+      height: 50px;
+      border: 1px solid;
+      border-radius: 50%;
+      vertical-align:middle;
+    }
   </style>
 </head>
 <body>
+  <div class="card">
+    <img class="product-image" src="images/image-equilibrium.jpg"/>
+    <p class="product-name"> Equilibrium #3429</p>
 
-  Equilibrium #3429
+    <p class="product-detail" style="color: hsl(215, 51%, 70%)">Our Equilibrium collection promotes balance and calm.</p>
+   
+    <div class="product-attribute">   
+      <img src="images/icon-ethereum.svg"/>
+      <p style="width:900;font-weight:900;color: hsl(178, 100%, 50%);display:inline-block">0.041 ETH</p>
+      <img style="margin-left: 80px" src="images/icon-clock.svg">
+      <p style=" font-weight:400; color: hsl(215, 51%, 70%);display:inline-block">3 days left</p>
+    </div>  
 
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
+    <div style="margin-left:5px;margin-right:5px;height:1px;background-color:hsl(215, 32%, 27%)" > </div>
+    <div class="foot">
+      <img class="ava" src="images/image-avatar.png">
+      <span style="color: hsl(215, 51%, 70%);margin-left:10px">Creation of</span> Jules Wyvern
+    </div>  
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/rathodloki/nft-preview-card-component-main">Lokendar Singh Rathod</a>.
   </div>
 </body>
 </html>
